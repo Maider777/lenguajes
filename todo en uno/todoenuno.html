@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    header{
+        animation-duration: 3s;animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes slidein{
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .a, .c, .h{
+        background-color: blue;
+    }
+
+    .b, .d, .f{
+        background-color: blueviolet;
+    }
+
+    .e, .g, .i{
+        background-color: crimson;
+    }
+
+    body{
+    margin: 0;
+    }
+
+    .contenedor{
+        max-width: max-content;
+        margin: 0 auto;
+    }
+
+    .contenedor h1{
+        text-align: center;
+        margin: 0;
+        font-size: 80px;
+        line-height: 600px;
+    }
+
+    .bloque p{
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .bloque1.parallax, .bloque2.parallax, .bloque3.parallax{
+        height: 600px;
+        background-position: 50% 50%;/*para que la imagen este centrada*/
+        background-repeat: no-repeat;/*para que la imagen no se repita*/
+        background-size: cover;/*para que la imagen ocupe toda la pantalla*/
+        background-attachment: fixed;/*para que la imagen se fije cuando movamos el scroll*/
+    }
+
+    .bloque1.parallax.image1{
+        background-image: url(image1.jpg);
+    }
+
+    .bloque2.parallax.image2{
+        background-image: url(image2.jpg);
+    }
+    
+    .bloque3.parallax.image3{
+        background-image: url(image3.jpg);
+    }
+
+    </style>
+</head>
+<body>
+    <h1><header>COCINA CONMIGO</header></h1>
+    <p>Si esto fuese una asignatura, sería de primero de cocina, pero el repaso no está de más, que eso del papillote todavía a alguno le suena a extravagancia de alta cocina. No lo es. Adriana Oroz Lacunza, nutricionista y autora del libro 'El método del plato' (editorial Zenith), orienta a los cocinillas sobre los mejores métodos de cocción.</p>
+    <div class="wrapper">
+        <div class="a">uno</div>
+        <div class="b">dos</div>
+        <div class="c">tres</div>
+        <div class="d">cuatro</div>
+        <div class="e">cinco</div>
+        <div class="f">seis</div>
+        <div class="g">siete</div>
+        <div class="h">ocho</div>
+        <div class="i">nueve</div>
+    </div>
+    <div class="bloque1 parallax image1">
+        <div class="contenedor">
+            <h1>CONTENEDOR 1</h1>
+        </div>
+    </div>
+    <div class="bloque">
+        <div class="contenedor">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic enim, nobis aut voluptates iusto necessitatibus qui soluta dolore id sequi quam, atque asperiores, ipsa minus sunt exercitationem quo commodi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores labore minima suscipit nemo inventore nostrum ipsa id dicta vitae esse aut, sit exercitationem incidunt ut tempora cumque nesciunt doloremque mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quisquam fugiat a id voluptatibus maxime rerum consequatur. Quaerat iure rem dolorem, quos quia cumque cupiditate eius qui, neque temporibus laborum.</p>
+        </div>
+    </div>
+
+    <div class="bloque2 parallax image2">
+        <div class="contenedor">
+            <h1>CONTENEDOR 2</h1>
+        </div>
+    </div>
+    <div class="bloque">
+        <div class="contenedor">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic enim, nobis aut voluptates iusto necessitatibus qui soluta dolore id sequi quam, atque asperiores, ipsa minus sunt exercitationem quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ipsum, recusandae similique obcaecati alias mollitia quod id culpa blanditiis! Cum veniam eius amet tempore sint? Est officia excepturi minus tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum ab quia reiciendis dolor a, voluptate ad explicabo expedita fugit nemo et perspiciatis provident corrupti nam ratione aliquid tempora quo.</p>
+        </div>
+    </div>
+
+    <div class="bloque3 parallax image3">
+        <div class="contenedor">
+            <h1>CONTENEDOR 3</h1>
+        </div>
+    </div>
+    <div class="bloque">
+        <div class="contenedor">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic enim, nobis aut voluptates iusto necessitatibus qui soluta dolore id sequi quam, atque asperiores, ipsa minus sunt exercitationem quo commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eveniet maxime iure illum amet possimus, velit molestiae temporibus voluptates esse iste soluta. Vitae maiores voluptatem commodi aspernatur error excepturi voluptatibus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dicta excepturi a rerum eos consequuntur! Quidem nihil iure inventore necessitatibus perferendis praesentium, illo expedita hic dicta deserunt beatae nesciunt cupiditate?</p>
+        </div>
+    </div>
+
+</body>
+</html>
